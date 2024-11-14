@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NestCodeStudio</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="header__nav">
+            <i class="fa-solid fa-bars burger-nav-menu" id="nav-burger-menu"></i>
+            <ul class="header__nav-list">
+                <a href="../index.html"><li class="header__nav-item">Inicio</li></a>
+                <a href="nosotros.html"><li class="header__nav-item">Nosotros</li></a>
+                <a href="portfolio.html"><li class="header__nav-item">Portfolio</li></a>
+                <a href="servicios.html"><li class="header__nav-item">Servicios</li></a>
+                <a href="contacto.html"><li class="header__nav-item">Contacto</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main" id="main">
+        <section class="main__section-contact-container">
+            <h1 id="contact-title" class="animate__animated animate__pulse">CONTACTO</h1>
+            <div class="main__contact-container">
+                <form class="main__contact-form-container animate__animated animate__fadeIn" id="contacto-form" method="POST">
+                    <!-- NOMBRE -->
+                    <div class="main__contact-wrapper">
+                        <label for="nombre">NOMBRE *</label>
+                        <div class="main__contact-nombre-wrapper">
+                            <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre..." autocomplete="off" required>
+                            <i class="fa-solid fa-circle-exclamation icono-alerta icono-alerta-nombre"></i>
+                        </div>
+                        <span class="main__contact-error-nombre"></span>
+                    </div>
+                
+                    <!-- TELEFONO -->
+                    <div class="main__contact-wrapper">
+                        <label for="telefono">TELEFONO *</label>
+                        <div class="main__contact-telefono-wrapper">
+                            <input type="tel" id="telefono" name="telefono" placeholder="Escriba su numero de telefono..." autocomplete="off" required>
+                            <i class="fa-solid fa-circle-exclamation icono-alerta icono-alerta-telefono"></i>
+                        </div>
+                        <span class="main__contact-error-telefono"></span>
+                    </div>
+                
+                    <!-- EMAIL -->
+                    <div class="main__contact-wrapper">
+                        <label for="email">EMAIL *</label>
+                        <div class="main__contact-email-wrapper">
+                            <input type="email" id="mail" name="email" placeholder="Ejemplo@gmail.com" autocomplete="off" required>
+                            <i class="fa-solid fa-circle-exclamation icono-alerta icono-alerta-email"></i>
+                        </div>
+                        <span class="main__contact-error-email"></span>
+                    </div>
+                
+                    <!-- MENSAJE -->
+                    <div class="main__contact-wrapper">
+                        <label for="mensaje">MENSAJE *</label>
+                        <div class="main__contact-mensaje-wrapper">
+                            <textarea rows="6" id="mensaje" name="mensaje" placeholder="Escriba su mensaje..." autocomplete="off" required></textarea>
+                            <i class="fa-solid fa-circle-exclamation icono-alerta icono-alerta-mensaje"></i>
+                        </div>
+                        <span class="main__contact-error-mensaje"></span>
+                    </div>
+                
+                    <div class="main__contact-wrapper">
+                        <button type="submit" class="main__contact-button form__button">Enviar</button>
+                        <div class="lugarError"></div>
+                    </div>
+                </form>                
+                <div class="main__contact-datos-container animate__animated animate__fadeIn">
+                    <h2>DATOS DE CONTACTO</h2>
+                    <div class="main__contact-politics-container">
+                        <a href="#" class="main__contact-politics-links">Terminos y condiciones</a>
+                        <a href="#" class="main__contact-politics-links">Politicas de privacidad</a>
+                    </div>
+                    <div class="main__contact-redes-wrapper">
+                        <div class="main__contact-redes-container">
+                            <i class="fa-regular fa-envelope" id="icons-contacto-email"></i>
+                            <p class="p-contacto"><strong>Email</strong>: <a href="nestcodestudio@gmail.com" target="_blank" class="a-contacto"><span class="redes-texto">nestcodestudio@gmail.com</span></a></p>
+                        </div>
+
+                        <div class="main__contact-redes-container">
+                            <i class="fa-brands fa-instagram" id="icons-contacto-ig"></i>
+                            <p class="p-contacto"><strong>Instagram</strong>: <a href="https://www.instagram.com/nestcodestudio/" target="_blank" class="a-contacto"> <span class="redes-texto">nestcodestudio</span></a></p>
+                        </div>
+
+                        <div class="main__contact-redes-container">
+                            <i class="fa-brands fa-youtube" id="icons-contacto-yt"></i>
+                            <p class="p-contacto"><strong>Youtube</strong>: <a href="https://www.youtube.com/@soulsclubargentina" target="_blank" class="a-contacto"><span class="redes-texto">nestcodestudio</span></a></p>
+                        </div>
+
+                        <div class="main__contact-redes-container">
+                            <i class="fa-brands fa-tiktok" id="icons-contacto-tt"></i>
+                            <p class="p-contacto"><strong>Tiktok</strong>: <a href="https://www.tiktok.com/@soulsclubargentina" target="_blank" class="a-contacto"><span class="redes-texto">nestcodestudio</span></a></p>
+                        </div>
+                    </div>
+                    <div class="main__contact-mensajes-contacto-container">
+                        <h3 class="main__contact-mensajes-contacto-items">
+                            Estamos en Contacto
+                        </h3>
+                        <p class="main__contact-mensajes-contacto-items">
+                            Respondemos con rapidez y basta experiencia, para asesorarlo en cada caso.
+                        </p>
+                    </div>
+                    <div class="main__contact-mensajes-atencion-container">
+                        <h3 class="main__contact-mensajes-atencion-item">
+                            Horario de Atención
+                        </h3>
+                        <p class="main__contact-mensajes-atencion-item">
+                            Lunes a Viernes de 8 a 19hs
+                        </p>    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a href="#" class="scroll-to-top" id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
+    </main>
+    <footer class="footer" id="footer">
+        <section class="footer__social-container">
+            <div class="footer__social-redirecciones-container">
+                <ul class="footer__social-redirecciones-list">
+                    <a href="../index.html" class="footer__social-redirecciones-link"><li class="footer__social-redirecciones-item">Inicio</li></a>
+                    <a href="../pages/nosotros.html" class="footer__social-redirecciones-link"><li class="footer__social-redirecciones-item">Nosotros</li></a>
+                    <a href="../pages/portfolio.html" class="footer__social-redirecciones-link"><li class="footer__social-redirecciones-item">Portafolio</li></a>
+                    <a href="../pages/servicios.html" class="footer__social-redirecciones-link"><li class="footer__social-redirecciones-item">Servicios</li></a>
+                    <a href="../pages/contacto.html" class="footer__social-redirecciones-link"><li class="footer__social-redirecciones-item">Contacto</li></a>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube youtube-icon"></i></a>
+                <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok tiktok-icon"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram instagram-icon"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin linkedin-icon"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fab fa-github github-icon"></i></a>
+            </div>
+            <div class="derechos-container">
+                <span class="derechos-texto">© NestCodeStudio. Todos los derechos reservados. Transformando ideas en código.</span>
+                <p class="derechos-consultas">¿Tienes consultas? Contactanos directamente:</p>
+                <a href="#" class="derechos-consultas-gmail">nestcodestudio@gmail.com</a>
+            </div>
+        </section>
+    </footer>
+    <script src="../javascript/codigo.js"></script>
+    <script src="../javascript/contacto.js"></script>
+    <script src="../javascript/burgerNavMenu.js"></script>
+</body>
+</html>

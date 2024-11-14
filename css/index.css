@@ -1,0 +1,356 @@
+
+
+/* ------------------- MAIN -------------------- */
+
+.img-fondo {
+    position: absolute;
+    opacity: .3;
+}
+
+.main__inicio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    max-width: 100vw;
+    width: 100%;
+    font-size: clamp(15px, 2.4vh, 45px);
+    z-index: -1;
+    /* background: linear-gradient(to top, #000, rgba(0, 0, 0, 0.056)),; */    
+}
+
+.main__inicio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__inicio-text-introduccion {
+    color: var(--colorSecundario);
+    font-size: clamp(15px, 5vh, 50px);
+}
+
+.paginas-web {
+    color: #e56cfd;
+    font-weight: bold;
+}
+
+.busca-plan {
+    color: rgb(190 242 100);
+    font-size: clamp(10px, 2.1vh, 30px);
+    margin: .7em 0 .7em 0;
+}
+
+.boton-conoce-mas {
+    position: relative;
+    z-index: 20;
+}
+
+h1 {
+    color: var(--colorSecundario);
+}
+
+h1::before,
+h1::after {
+    content: "\00a0";
+}
+
+.main__inicio-button {
+    margin-top: 1em;
+    padding: 11px 20px;
+    width: fit-content;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(to left, #FF4500, #f86b38, #ffb298);
+    color:  #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: clamp(15px, 1.7vh, 40px);
+    transition: .4s ease-in;
+    box-shadow: 1px 1px 10px #f86b38;
+}
+
+.main__inicio-button:hover {
+    background: linear-gradient(to left, #ffb298, #f86b38, #FF4500);
+    transition: .3s ease-in;
+}
+
+#ver-seccion-beneficios {
+    scroll-margin-top: 20em; /* Ajusta el valor a la distancia deseada */
+}
+
+/* SERVICIO EN INICIO */
+
+.main__inicio-servicios {
+    display: flex;
+    border: 1px solid var(--colorSecundario);
+    border-radius: 20px;
+    padding: 10px;
+    gap: 1em;
+    margin-bottom: 2em;
+    align-items: center;
+}
+
+.main__inicio-servicios:first-child {
+    font-size: clamp(10px, 1.3vh, 40px);
+    color: #a1fd6c;
+}
+
+
+/* ---------------------- SECCION DE BENFEICIOS ---------------------- */
+
+.main__inicio-beneficios-section {
+    max-width: 60vw;
+    margin: auto;
+    margin-bottom: 10em;
+    margin-top: 10em;
+    width: 100%;
+    height: fit-content;
+    color: #C5C6C7;
+}
+
+.main__inicio-beneficios {
+    display: flex;
+}
+
+.main__inicio-beneficios-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    padding: 0 0 0 5em;
+    gap: 2em;
+}
+
+.main__inicio-beneficios-title {
+    text-align: center;
+    padding: 2em 0 0 0 ;
+    text-decoration: underline;
+    color: #F0F4F8;
+}
+
+/* WRAPPER */
+
+.main__incio-beneficios-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* SOBRE NOSOTROS CONTAINER */
+
+h3 {
+    color: var(--colorSecundario);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.main__inicio-beneficios-sobre-nosotros-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding-left: 3em;
+}
+
+.main__inicio-beneficios-sobre-nosotros-title {
+    font-size: clamp(15px, 3vh, 50px);
+    padding-bottom: 1em;
+    color: var(--colorSecundario);
+}
+
+.main__inicio-beneficios-sobre-nosotros-text {
+    font-size: clamp(15px, 1.8vh, 40px);
+    line-height: 27px;
+    margin-bottom: 1em;
+    color: #c9c9c9;
+}
+
+.palabra-nosotros-seccion-beneficios {
+    color: #e56cfd;
+    font-weight: bold;
+}
+
+/* BOTON DE VER MAS EN SECCION DE SOBRE NOSOTROS */
+
+.main__inicio-beneficios-sobre-nosotros-button-ver-mas {
+    color: #e56cfd;
+    text-decoration: none;
+}
+
+.main__inicio-beneficios-sobre-nosotros-button-ver-mas:hover {
+    text-decoration: underline;
+}
+
+.flecha-ver-mas {
+    text-align: center;
+    font-size: 12px;
+    padding-left: 3px;
+}
+
+/* ICONO DE SECCION DE BENEFICIOS */
+
+.icono-pincel,
+.icono-auriculares,
+.icono-lupa,
+.icono-escudo,
+.icono-personas,
+.icono-flechas{
+    color: #e56cfd;
+    font-size: 2em;
+    padding-right: .8em;
+}
+
+/* DIVISION DE SECCION */
+
+.divisor-de-seccion {
+    width: 100%;
+    height: 1px;
+    background-color: #9e9e9e;
+}
+
+/* -------------------------- MEDIA QUERIES SECCION DE BENEFICIOS ----------------------- */
+
+@media screen and (max-width: 1300px) {
+    .main__incio-beneficios-wrapper {
+        flex-direction: column;
+    }
+
+    /* SOBRE NOSOTROS */
+
+    .main__inicio-beneficios-sobre-nosotros-container {
+        width: 100%;
+    }
+
+    /* BENEFICIOS */
+
+    .main__inicio-beneficios-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 95vw;
+        width: 100%;
+        padding: 4em 0 0 5em;
+        gap: 2em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main__inicio-section {
+    margin: auto;
+    max-width: 80vw;
+    width: 100%;
+    }
+}
+
+/* ------------------ PREGUNTAS FRECUENTES -------------------- */
+
+.main-faqs-section {
+    max-width: 40vw;
+    width: 100%;
+    margin: auto;
+    padding: 8em 0 10em 0
+}
+
+.main__details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 60vw;
+    width: 100%;
+    font-size: 16px;
+}
+
+.main__details-title {
+    padding: 0 0 2em 0;
+    font-size: 1.8em;
+    text-align: center;
+    text-decoration: underline;
+    color: var(--colorSecundario);
+}
+
+.main__details {
+    max-width: 100%;
+    width: 100%;
+    background-color: var(--colorSecundario);
+}
+
+.main__details:is([open]) summary,
+.main__details:is(:not([open])) {
+    cursor: pointer;
+}
+
+.details--1 {
+    border-radius: 8px 8px 0 0;
+}
+
+.details--6 {
+    border-radius: 0 0 8px 8px ;
+}
+
+.main__details:is(:not(:last-child)) {
+    border-bottom: 1px solid var(--colorPrincipal);
+}
+
+.main__details[open] {
+    background-color: var(--colorSecundario);
+}
+
+.main__details p {
+    padding: 1em 0 1em 0;
+    margin: auto;
+    max-width: 91%;
+    border-top: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.main__details summary {
+    list-style: none; /* Elimina el estilo de lista que incluye la flecha en algunos navegadores */
+    font-weight: 600;
+    padding: 1em;
+    color: var(--secondary-color);
+}
+
+details summary::before {
+    content: "▶"; /* Flecha personalizada */
+    font-size: 1em;
+    color: var(--secondary-color); /* Color de la flecha */
+    display: inline-block;
+    margin-right: 8px; /* Espacio entre la flecha y el texto */
+    transition: transform 0.3s ease; /* Transición suave para la rotación */
+}
+
+details[open] summary::before {
+    transform: rotate(90deg); /* Rotar la flecha cuando el details está abierto */
+}
+
+.main__details[open] summary {
+    color: #e56cfd;
+}
+
+/* -------- PAGINA DE PREGUNTAS FRECUENTES QUERIES -------- */
+
+@keyframes openbgmenu3 {
+
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+    
+}
+
+@media screen and (max-width:1300px) {
+    .main-faqs-section {
+        max-width: 80vw;
+        width: 100%;
+        font-size: 17px;
+    }
+    
+    .main__details-title {
+        font-size: 2em;
+    }
+}
+
+/* -------- PAGINA DE PREGUNTAS FRECUENTES END -------- */
